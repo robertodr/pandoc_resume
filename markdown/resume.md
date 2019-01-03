@@ -1,13 +1,15 @@
-Johnny Coder
-============
-
-----
-
->  In this style, the resume starts with a blockquote, where
->  you can briefly list your specialties, or include a salient
->  quote. Ending a line with a backslash forces a line break.
-
-----
+---
+papersize: a4
+fontsize: 12pt
+name: Roberto
+surname: Di Remigio
+email: roberto.d.remigio@uit.no
+phone: +4745672348
+address: fooffa
+town: barba
+country: USA
+quote: " In this style, the resume starts with a blockquote, where you can briefly list your specialties, or include a salient quote. Ending a line with a backslash forces a line break."
+...
 
 Education
 ---------
@@ -72,7 +74,7 @@ Programming Languages
 :   **second-lang:** Description of your experience with second-lang,
     perhaps again including a [link] [ref], this time placing the url
     reference elsewhere in the document to reduce clutter (see source
-    file). 
+    file).
 
 :   **obscure-but-impressive-lang:** We both know this one's pushing
     it.

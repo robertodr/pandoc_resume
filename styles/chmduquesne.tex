@@ -71,6 +71,11 @@ $endif$
    indentnext=no,
   ]
 
+\usesymbols[fontawesome]
+\define\FA{\dosingleargument\doFA}
+\def\doFA[#1]{\inlinedbox
+    {\scale[height=.5em]{\symbol[fontawesome][#1]}}}
+
 $if(toc)$
 \setupcombinedlist[content][list={$placelist$}]
 
@@ -80,6 +85,7 @@ $header-includes$
 $endfor$
 
 \starttext
+
 $if(title)$
 \startalignment[center]
   \blank[2*big]
@@ -100,6 +106,25 @@ $include-before$
 $endfor$
 $if(toc)$
 \placecontent
+$endif$
+
+\section[title={$name$ $surname$},reference={name}]
+
+\thinrule
+
+\startblockquote
+  \FA[map] $address$
+  \FA[envelope] \useURL[url4][mailto:$email$][][$email$]\from[url4]
+ $phone$\crlf
+$address$ - $town$, $country$
+\stopblockquote
+
+\thinrule
+
+$if(quote)$
+\startblockquote
+  $quote$
+\stopblockquote
 $endif$
 
 $body$
